@@ -42,11 +42,6 @@ using System.ComponentModel.DataAnnotations;
     /// </summary>
     readonly IDataManager? _dataManager;
 
-    /// <summary>
-    /// Data cache
-    /// </summary>
-    readonly ITokenStore? _cache;
-
     #endregion
 
     #endregion
@@ -84,8 +79,6 @@ using System.ComponentModel.DataAnnotations;
         _configuration = configuration;
 
         _provider = provider;
-
-        _cache = null;
 
         _dataManager = null;
 

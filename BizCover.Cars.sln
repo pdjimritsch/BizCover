@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizCover.Cars.Service", "Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizCover.Cars.Configuration", "BizCover.Cars.Configuration\BizCover.Cars.Configuration.csproj", "{98DB00A0-873D-4EE6-9A1F-5A8F8E269974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizCover.Cars.Network", "BixCover.Cars.Network\BizCover.Cars.Network.csproj", "{B6E66D73-6CFB-4E21-B257-870A4EC7FF6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizCover.Cars.Network", "BizCover.Cars.Network\BizCover.Cars.Network.csproj", "{B6E66D73-6CFB-4E21-B257-870A4EC7FF6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizCover.Cars.RuleEngine", "BizCover.Cars.RuleEngine\BizCover.Cars.RuleEngine.csproj", "{5673413B-AD52-4486-BEC2-7EBEC73B915B}"
 EndProject
