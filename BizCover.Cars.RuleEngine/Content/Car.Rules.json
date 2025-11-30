@@ -1,0 +1,19 @@
+{
+    "rules": [
+        {
+            "name": "CarDiscountRule",
+            "apply":  true,
+            "enabled": true
+        },
+        {
+            "name": "CarYearDiscountRule",
+            "apply": true,
+            "enabled": true
+        },
+        {
+            "name": "CarVolumeDiscountRule",
+            "apply": true,
+            "enabled": true
+        }
+    ]
+}

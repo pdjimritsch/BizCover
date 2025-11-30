@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Repository\BizCover.Repository.Cars.cars.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Repository\BizCover.Repository.Cars.cars.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.14.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BizCover.Cars.Common\BizCover.Cars.Common.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Models\BizCover.Cars.Models.csproj" />
+  </ItemGroup>
+
+</Project>

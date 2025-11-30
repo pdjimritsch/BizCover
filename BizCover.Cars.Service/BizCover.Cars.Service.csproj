@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BizCover.Cars.Common\BizCover.Cars.Common.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Models\BizCover.Cars.Models.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Repository\BizCover.Cars.Repository.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.RuleEngine\BizCover.Cars.RuleEngine.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>22fe9dc7-5488-4081-8ce6-5aaf1eb74d9a</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>BizCover.Cars.Api</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="9.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="9.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.11" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.15.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.14.15" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.6" />
+    <PackageReference Include="System.Runtime.Caching" Version="9.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BixCover.Cars.Network\BizCover.Cars.Network.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Common\BizCover.Cars.Common.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Configuration\BizCover.Cars.Configuration.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Data.Factory\BizCover.Cars.Data.Factory.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Security\BizCover.Cars.Security.csproj" />
+    <ProjectReference Include="..\BizCover.Cars.Service\BizCover.Cars.Service.csproj" />
+  </ItemGroup>
+
+</Project>

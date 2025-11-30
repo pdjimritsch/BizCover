@@ -1,0 +1,40 @@
+@BizCover.Cars.Api_HostAddress = http://localhost:5250
+
+GET {{BizCover.Cars.Api_HostAddress}}/api/car/list
+Content-Type: application/json
+###
+
+## The application of the antiforgery token to the request
+## simulates the placement of the AntiforgeryToken() within
+## the web application page (Razor / MVC / React / Angular)
+POST {{BizCover.Cars.Api_HostAddress}}/api/car/add
+Content-type: application/json
+X-XSRF-TOKEN: DF215646-06E1-43AC-9758-362C1A3E9AE3
+Accept: application/json
+{
+  "color": "red",
+  "country_manufactured": "Australia",
+  "id": 1,
+  "make": "sedan",
+  "model": "toyota",
+  "price": 49999.00,
+  "year": 2024
+}
+###
+
+## The application of the antiforgery token to the request
+## simulates the placement of the AntiforgeryToken() within
+## the web application page (Razor / MVC / React / Angular)
+PUT {{BizCover.Cars.Api_HostAddress}}/api/car/update
+X-XSRF-TOKEN: DF215646-06E1-43AC-9758-362C1A3E9AE3
+Content-Type: application/json
+Accept: application/json
+{
+  "color": "red",
+  "country_manufactured": "Australia",
+  "id": 1,
+  "make": "sedan",
+  "model": "toyota",
+  "price": 149999.00,
+  "year": 2024
+}
